@@ -3,12 +3,12 @@
 #include <string>
 
 int main(void){
-    std::ifstream ifs("./dictionary-data.txt");
-    std::string s;
+    std::ifstream inputStream("./dictionary-data.txt");
+    std::string buff;
 
-    getline(ifs, s);
+    getline(inputStream, buff);
 
-    std::cout << s << std::endl;
+    std::cout << buff << std::endl;
 
     getchar();
 
