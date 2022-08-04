@@ -6,6 +6,6 @@ C++
 vscode
 
 ## 実行方法
-'''
+```
 start main.exe
-'''
+```
