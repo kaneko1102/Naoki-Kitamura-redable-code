@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <unistd.h>
 
 #define DICTIONARY_PATH "./dictionary-data.txt"
 
@@ -15,12 +16,13 @@ int main(void){
         wordLIst.push_back(buff);
     }
 
-    for(int i=0;i<wordLIst.size();i++){
-        std::cout << i << ": " << wordLIst[i] << std::endl;
-    }
+    int inputID;
+    std::cin >> inputID;
+
+    std::cout << inputID << ": " << wordLIst[inputID] << std::endl;
 
     // ƒRƒ“ƒ\[ƒ‹‚ª‘¦•Â‚¶‚é‚Ì‚ð–h‚®‚½‚ß‚É“ü—Í‘Ò‚¿
-    getchar();
+    sleep(3);
 
     return 0;
 }
