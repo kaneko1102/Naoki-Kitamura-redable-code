@@ -21,7 +21,7 @@ int main(void){
 
     std::cout << inputID << ": " << wordLIst[inputID] << std::endl;
 
-    // ƒRƒ“ƒ\[ƒ‹‚ª‘¦•Â‚¶‚é‚Ì‚ğ–h‚®
+    // ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ãŒå³é–‰ã˜ã‚‹ã®ã‚’é˜²ã
     sleep(3);
 
     return 0;
