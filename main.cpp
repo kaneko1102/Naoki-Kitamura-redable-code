@@ -21,7 +21,7 @@ int main(void){
 
     std::cout << inputID << ": " << wordLIst[inputID] << std::endl;
 
-    // コンソールが即閉じるのを防ぐために入力待ち
+    // コンソールが即閉じるのを防ぐ
     sleep(3);
 
     return 0;
