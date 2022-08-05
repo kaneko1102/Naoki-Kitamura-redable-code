@@ -8,11 +8,10 @@
 
 #define DICTIONARY_PATH "./dictionary-data.txt"
 
-int main(void){
+// データファイルの読み込み
+void readDictionaryData(std::vector<std::pair<std::string,std::string> > &wordLIst){
     std::ifstream inputStream(DICTIONARY_PATH);
     std::string buff;
-
-    std::vector<std::pair<std::string,std::string> > wordLIst;
 
     while(getline(inputStream, buff)){
         std::stringstream ss{buff};
@@ -24,6 +23,13 @@ int main(void){
         }
         wordLIst.push_back(std::make_pair(str[0],str[1]));
     }
+}
+
+int main(void){
+
+    std::vector<std::pair<std::string,std::string> > wordLIst;
+
+    readDictionaryData(wordLIst); // データファイルの読み込み
 
     // int inputID;
     // std::cin >> inputID;
